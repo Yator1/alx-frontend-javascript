@@ -4,14 +4,14 @@ export default class Currency {
     this._name = name;
   }
 
-  validateName(name) {
+  static validateName(name) {
     if (typeof name !== "string") {
       throw new TypeError("Name must be a string");
     }
     return name;
   }
 
-  validateCode(code) {
+  static validateCode(code) {
     if (typeof code !== "string") {
       throw new TypeError("Name must be a string");
     }
