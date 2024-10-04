@@ -5,19 +5,19 @@ export default class HolbertonCourse {
     this._students = this.typeStudents(students);
   }
 
-  static typeName(name) {
+  typeName(name) {
     if (typeof name !== "string") {
       throw new TypeError("Name must be a string");
     }
     return name;
   }
-  static typeLength(length) {
+  typeLength(length) {
     if (typeof length !== "number") {
       throw new TypeError("Length must be a number");
     }
     return length;
   }
-  static typeStudents(students) {
+  typeStudents(students) {
     if (
       !Array.isArray(students) ||
       !students.every((student) => typeof student === "string")
