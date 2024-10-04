@@ -48,6 +48,6 @@ export default class HolbertonCourse {
   }
 
   set students(newStudents) {
-    this._length = this.typeName(newStudents);
+    this._students = this.typeName(newStudents);
   }
 }
